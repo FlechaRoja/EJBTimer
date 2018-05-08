@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<weblogic-ejb-jar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar http://xmlns.oracle.com/weblogic/weblogic-ejb-jar/1.7/weblogic-ejb-jar.xsd"
+                  xmlns="http://xmlns.oracle.com/weblogic/weblogic-ejb-jar">
+  <weblogic-enterprise-bean>
+    <ejb-name>DemoTimerService</ejb-name>
+    <stateless-session-descriptor>
+      <timer-descriptor>
+        <persistent-store-logical-name>storeEJB</persistent-store-logical-name>
+      </timer-descriptor>
+    </stateless-session-descriptor>
+  </weblogic-enterprise-bean>
+  <timer-implementation>Clustered</timer-implementation>
+</weblogic-ejb-jar>
